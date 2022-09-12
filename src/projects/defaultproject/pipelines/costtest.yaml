@@ -22,3 +22,11 @@ spec:
       systemToGitSync: true
     name: costtest
     type: SystemSync
+  triggers:
+  - config:
+      repo:
+        provider: Github
+        repository: costtest
+        revision: main
+    name: costtest
+    type: Webhook
