@@ -1,0 +1,16 @@
+apiVersion: integrations.k8smgmt.io/v3
+kind: Repository
+metadata:
+  name: costtest
+  project: defaultproject
+spec:
+  agents:
+  - name: costkrantest
+  credentials:
+    password: sealed://credentials.password
+    username: kranthi-rafay
+  endpoint: https://github.com/kranthi-rafay/costtest.git
+  options: {}
+  secret:
+    name: file://artifacts/costtest/sealed-secret.yaml
+  type: Git

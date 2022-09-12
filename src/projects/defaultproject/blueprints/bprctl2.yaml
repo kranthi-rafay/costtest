@@ -1,0 +1,26 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: bprctl2
+  project: defaultproject
+spec:
+  base:
+    name: default
+    version: 1.17.0
+  costProfileRef: {}
+  defaultAddons:
+    csiSecretStoreConfig:
+      providers: {}
+    enableIngress: false
+    enableLogging: false
+    enableMonitoring: false
+    enableVM: false
+  drift:
+    enabled: false
+  networkPolicy: {}
+  opaPolicy: {}
+  placement: {}
+  sharing:
+    enabled: false
+  type: custom
+  version: v5

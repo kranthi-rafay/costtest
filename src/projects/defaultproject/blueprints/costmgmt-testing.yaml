@@ -1,0 +1,32 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: costmgmt-testing
+  project: defaultproject
+spec:
+  base:
+    name: default
+    version: 1.15.0
+  costProfileRef:
+    enabled: true
+    name: default-cost-profile-aws
+    version: version-1658308210
+  defaultAddons:
+    csiSecretStoreConfig:
+      providers: {}
+    enableIngress: true
+    enableLogging: false
+    enableMonitoring: true
+    enableVM: false
+  drift:
+    enabled: false
+  networkPolicy: {}
+  opaPolicy:
+    enabled: true
+    name: policy-restricted
+    version: version-1657782605
+  placement: {}
+  sharing:
+    enabled: false
+  type: custom
+  version: v2

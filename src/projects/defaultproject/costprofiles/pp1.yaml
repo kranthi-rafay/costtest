@@ -1,0 +1,18 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: pp1
+  project: defaultproject
+spec:
+  installationParams:
+    aws:
+      awsCredentials:
+        awsAccountId: "23"
+        awsServiceKeyName: s
+      curIntegration:
+        athenaRegion: das
+      spotIntegration: {}
+  providerType: aws
+  sharing:
+    enabled: false
+  version: v1

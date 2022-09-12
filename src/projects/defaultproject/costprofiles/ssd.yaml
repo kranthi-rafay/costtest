@@ -1,0 +1,19 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: ssd
+  project: defaultproject
+spec:
+  installationParams:
+    aws:
+      awsCredentials:
+        awsServiceKeyName: sds
+      curIntegration: {}
+      spotIntegration:
+        awsSpotDataPrefix: sd
+        spotLabel: as
+        spotLabelValue: sd
+  providerType: AWS
+  sharing:
+    enabled: false
+  version: v2

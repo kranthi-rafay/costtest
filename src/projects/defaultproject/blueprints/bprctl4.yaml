@@ -1,0 +1,29 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: bprctl4
+  project: defaultproject
+spec:
+  base:
+    name: default
+    version: 1.18.0
+  costProfileRef:
+    enabled: true
+    name: madhuaws-rctl3
+    version: v1
+  defaultAddons:
+    csiSecretStoreConfig:
+      providers: {}
+    enableIngress: false
+    enableLogging: false
+    enableMonitoring: true
+    enableVM: false
+  drift:
+    enabled: false
+  networkPolicy: {}
+  opaPolicy: {}
+  placement: {}
+  sharing:
+    enabled: false
+  type: custom
+  version: v5

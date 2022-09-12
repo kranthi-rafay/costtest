@@ -1,0 +1,18 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: testprctl15
+  project: defaultproject
+spec:
+  installationParams:
+    aws:
+      awsCredentials:
+        awsAccountId: "2323"
+        awsServiceKeyName: sdf
+      curIntegration: {}
+      spotIntegration:
+        spotLabel: sa
+  providerType: AWS
+  sharing:
+    enabled: false
+  version: v16

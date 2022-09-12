@@ -1,0 +1,25 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: op15
+  project: defaultproject
+spec:
+  installationParams:
+    aws:
+      awsCredentials:
+        awsServiceKeyName: DFG
+      curIntegration:
+        athenaBucketName: reserved-pricing
+        athenaDatabase: rafay
+        athenaRegion: us-west-1
+        athenaTable: costmgmt
+      spotIntegration:
+        awsSpotDataBucket: spot-pricing
+        awsSpotDataPrefix: costmgmt
+        awsSpotDataRegion: us-west-1
+        spotLabel: type
+        spotLabelValue: spot
+  providerType: AWS
+  sharing:
+    enabled: false
+  version: v1

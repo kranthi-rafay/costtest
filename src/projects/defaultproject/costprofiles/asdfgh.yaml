@@ -1,0 +1,6 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: asdfgh
+  project: defaultproject
+spec: {}

@@ -1,0 +1,48 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Cluster
+metadata:
+  labels:
+    env: dev
+  name: costmgmt-dashboard
+  project: defaultproject
+spec:
+  blueprintConfig:
+    name: costmgmt-testing
+    version: v2
+  cloudCredentials: raghavendra
+  config:
+    metadata:
+      name: costmgmt-dashboard
+      region: ap-southeast-2
+      version: "1.22"
+    network:
+      cni:
+        name: aws-cni
+    nodeGroups:
+    - amiFamily: Ubuntu2004
+      desiredCapacity: 2
+      iam:
+        withAddonPolicies:
+          autoScaler: true
+          externalDNS: true
+          imageBuilder: true
+      instanceType: t2.xlarge
+      maxSize: 2
+      minSize: 2
+      name: costmgmt-dashboard
+      privateNetworking: true
+      ssh:
+        allow: true
+        publicKeyName: raghavendra-keypair-sydney
+      version: "1.22"
+      volumeSize: 40
+      volumeType: gp3
+    vpc:
+      cidr: 192.168.0.0/16
+      clusterEndpoints:
+        privateAccess: false
+        publicAccess: true
+      nat:
+        gateway: Single
+  proxyConfig: {}
+  type: aws-eks

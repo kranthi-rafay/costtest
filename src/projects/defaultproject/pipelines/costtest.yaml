@@ -1,0 +1,24 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Pipeline
+metadata:
+  name: costtest
+  project: defaultproject
+spec:
+  active: true
+  sharing:
+    enabled: false
+  stages:
+  - config:
+      destinationRepo: {}
+      gitToSystemSync: true
+      includedResources:
+      - name: '*'
+      sourceAsDestination: true
+      sourceRepo:
+        path:
+          name: src
+        repository: costtest
+        revision: main
+      systemToGitSync: true
+    name: costtest
+    type: SystemSync

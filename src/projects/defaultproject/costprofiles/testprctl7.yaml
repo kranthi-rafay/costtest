@@ -1,0 +1,16 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: testprctl7
+  project: defaultproject
+spec:
+  installationParams:
+    aws:
+      awsCredentials: {}
+      curIntegration: {}
+      spotIntegration:
+        spotLabel: sa
+  providerType: CUSTOM
+  sharing:
+    enabled: false
+  version: v16
