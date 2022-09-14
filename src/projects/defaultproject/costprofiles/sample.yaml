@@ -8,7 +8,7 @@ spec:
     aws:
       awsCredentials:
         awsAccountId: "679196758854"
-        awsServiceKeyName: AKIAZ4I2ICNDDKALNLH5
+        awsServiceKeyName: AKIAZ4I2ICNDFTJG25PU
       curIntegration:
         athenaBucketName: s3://aws-athena-query-results-kube-cost-qa
         athenaDatabase: athenacurcfn_kube_cost_qa
@@ -18,4 +18,4 @@ spec:
   providerType: aws
   sharing:
     enabled: false
-  version: v2
+  version: v3-raghavendra
