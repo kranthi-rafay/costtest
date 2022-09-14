@@ -9,8 +9,8 @@ spec:
     version: 1.18.4
   costProfileRef:
     enabled: true
-    name: sample
-    version: v5
+    name: default-cost-profile-aws
+    version: version-1658308210
   defaultAddons:
     csiSecretStoreConfig:
       providers: {}
@@ -26,4 +26,4 @@ spec:
   sharing:
     enabled: false
   type: custom
-  version: v5
+  version: v4

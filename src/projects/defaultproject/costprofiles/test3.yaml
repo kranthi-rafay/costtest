@@ -1,6 +1,0 @@
-apiVersion: cost.k8smgmt.io/v3
-kind: CostProfile
-metadata:
-  name: test3
-  project: defaultproject
-spec: {}
