@@ -6,7 +6,7 @@ metadata:
 spec:
   blueprintConfig:
     name: costmgmt-demo
-    version: v3
+    version: v5
   cloudCredentials: raghavendra
   config:
     metadata:
