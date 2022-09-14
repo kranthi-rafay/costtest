@@ -7,15 +7,15 @@ spec:
   installationParams:
     aws:
       awsCredentials:
-        awsAccountId: "6791758854"
-        awsServiceKeyName: AKIAZ4I2ICNDLKRLFV
+        awsAccountId: "679196758854"
+        awsServiceKeyName: AKIAZ4I2ICNDDKALNLH5
       curIntegration:
-        athenaBucketName: s3://aws-athena-query-results-madhu
-        athenaDatabase: athenacurcfn_madhu
+        athenaBucketName: s3://aws-athena-query-results-kube-cost-qa
+        athenaDatabase: athenacurcfn_kube_cost_qa
         athenaRegion: us-west-2
-        athenaTable: madhu
+        athenaTable: kube_cost_qa
       spotIntegration: {}
   providerType: aws
   sharing:
     enabled: false
-  version: v1
+  version: v2

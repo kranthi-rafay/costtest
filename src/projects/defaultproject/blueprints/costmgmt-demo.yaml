@@ -6,11 +6,11 @@ metadata:
 spec:
   base:
     name: default
-    version: 1.18.3
+    version: 1.18.4
   costProfileRef:
     enabled: true
     name: sample
-    version: v1
+    version: v2
   defaultAddons:
     csiSecretStoreConfig:
       providers: {}
@@ -26,4 +26,4 @@ spec:
   sharing:
     enabled: false
   type: custom
-  version: v1
+  version: v2
