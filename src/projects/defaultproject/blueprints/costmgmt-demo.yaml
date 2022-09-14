@@ -4,13 +4,19 @@ metadata:
   name: costmgmt-demo
   project: defaultproject
 spec:
-  costProfileRef: {}
+  base:
+    name: default
+    version: 1.18.3
+  costProfileRef:
+    enabled: true
+    name: sample
+    version: v1
   defaultAddons:
     csiSecretStoreConfig:
       providers: {}
-    enableIngress: false
+    enableIngress: true
     enableLogging: false
-    enableMonitoring: false
+    enableMonitoring: true
     enableVM: false
   drift:
     enabled: false
@@ -20,3 +26,4 @@ spec:
   sharing:
     enabled: false
   type: custom
+  version: v1
