@@ -10,7 +10,7 @@ spec:
   costProfileRef:
     enabled: true
     name: sample
-    version: v3-raghavendra
+    version: v5
   defaultAddons:
     csiSecretStoreConfig:
       providers: {}
@@ -26,4 +26,4 @@ spec:
   sharing:
     enabled: false
   type: custom
-  version: v3
+  version: v5

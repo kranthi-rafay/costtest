@@ -6,16 +6,10 @@ metadata:
 spec:
   installationParams:
     aws:
-      awsCredentials:
-        awsAccountId: "679196758854"
-        awsServiceKeyName: AKIAZ4I2ICNDFTJG25PU
-      curIntegration:
-        athenaBucketName: s3://aws-athena-query-results-kube-cost-qa
-        athenaDatabase: athenacurcfn_kube_cost_qa
-        athenaRegion: us-west-2
-        athenaTable: kube_cost_qa
+      awsCredentials: {}
+      curIntegration: {}
       spotIntegration: {}
   providerType: aws
   sharing:
     enabled: false
-  version: v3-raghavendra
+  version: v5
