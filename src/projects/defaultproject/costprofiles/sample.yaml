@@ -1,0 +1,21 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: sample
+  project: defaultproject
+spec:
+  installationParams:
+    aws:
+      awsCredentials:
+        awsAccountId: "6791758854"
+        awsServiceKeyName: AKIAZ4I2ICNDLKRLFV
+      curIntegration:
+        athenaBucketName: s3://aws-athena-query-results-madhu
+        athenaDatabase: athenacurcfn_madhu
+        athenaRegion: us-west-2
+        athenaTable: madhu
+      spotIntegration: {}
+  providerType: aws
+  sharing:
+    enabled: false
+  version: v1
