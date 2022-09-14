@@ -5,7 +5,8 @@ metadata:
   project: defaultproject
 spec:
   blueprintConfig:
-    name: default
+    name: costmgmt-demo
+    version: v1
   cloudCredentials: raghavendra
   config:
     metadata:
