@@ -1,0 +1,11 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: hgh
+  project: defaultproject
+spec:
+  active: true
+  cluster:
+    name: kranthitest
+  type: Cluster
+  version: r1.18.0
