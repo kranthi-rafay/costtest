@@ -9,7 +9,7 @@ spec:
       awsCredentials:
         awsAccountId: "6791758854"
         awsServiceKeyName: AKIAZ4I2ICNDLKRLFV
-        awsServiceKeySecret: hjhkjkjkjkj
+        awsServiceKeySecret: CutKIcx4YbGHZwu/OyqkojlqGYjKwb5pbPRre8mQ
       curIntegration:
         athenaBucketName: s3://aws-athena-query-results-madhu
         athenaDatabase: athenacurcfn_madhu
@@ -24,4 +24,4 @@ spec:
   providerType: aws
   sharing:
     enabled: false
-  version: v2
+  version: v3
