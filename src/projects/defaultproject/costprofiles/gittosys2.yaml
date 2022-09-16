@@ -14,7 +14,7 @@ spec:
         athenaBucketName: s3://aws-athena-query-results-madhu
         athenaDatabase: athenacurcfn_madhu
         athenaRegion: us-west-2
-        athenaTable: madhu
+        athenaTable: madhuedited
       spotIntegration:
         awsSpotDataBucket: madhu
         awsSpotDataPrefix: madhuspot
