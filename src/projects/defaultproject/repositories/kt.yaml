@@ -4,5 +4,13 @@ metadata:
   name: kt
   project: defaultproject
 spec:
+  agents:
+  - {}
+  credentials:
+    password: sealed://credentials.password
+    username: raghavendra@rafay.co
+  endpoint: https://github.com/kranthi-rafay/costtsdfest.git
   options: {}
+  secret:
+    name: file://artifacts/kt/sealed-secret.yaml
   type: Git
