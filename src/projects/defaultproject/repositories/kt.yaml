@@ -1,0 +1,8 @@
+apiVersion: integrations.k8smgmt.io/v3
+kind: Repository
+metadata:
+  name: kt
+  project: defaultproject
+spec:
+  options: {}
+  type: Git
