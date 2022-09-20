@@ -1,0 +1,18 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: test31z
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      catalog: default-istio
+      chartName: istiod
+      chartVersion: 1.14.4
+    options:
+      maxHistory: 10
+      timeout: 5m0s
+    type: Helm
+  namespace: default-costmgmt
+  sharing:
+    enabled: false
