@@ -1,22 +1,30 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Blueprint
 metadata:
-  name: rctl-test-blueprint
+  name: b1
   project: defaultproject
 spec:
-  costProfileRef: {}
+  base:
+    name: default
+    version: 1.19.3
+  costProfileRef:
+    enabled: true
+    name: p1
+    version: v1
   defaultAddons:
     csiSecretStoreConfig:
       providers: {}
-    enableIngress: false
+    enableIngress: true
     enableLogging: false
-    enableMonitoring: false
+    enableMonitoring: true
     enableVM: false
   drift:
     enabled: false
+  meshRef: {}
   networkPolicy: {}
   opaPolicy: {}
   placement: {}
   sharing:
     enabled: false
   type: custom
+  version: v1

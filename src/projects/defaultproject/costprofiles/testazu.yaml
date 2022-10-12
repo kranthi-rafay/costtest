@@ -1,0 +1,17 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: testazu
+  project: defaultproject
+spec:
+  installationParams:
+    azure:
+      customPricing:
+        cloudCredentialsID: 1
+        spotInstance:
+          spotLabel: das
+      gpuEstimates: {}
+  providerType: azure
+  sharing:
+    enabled: false
+  version: dsa

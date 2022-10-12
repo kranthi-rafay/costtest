@@ -1,7 +1,7 @@
 apiVersion: gitops.k8smgmt.io/v3
 kind: Pipeline
 metadata:
-  name: costtest
+  name: cost
   project: defaultproject
 spec:
   active: true
@@ -17,16 +17,16 @@ spec:
       sourceRepo:
         path:
           name: src
-        repository: costtest
-        revision: main
+        repository: costdev
+        revision: costdev
       systemToGitSync: true
-    name: costtest
+    name: cost1
     type: SystemSync
   triggers:
   - config:
       repo:
         provider: Github
-        repository: costtest
-        revision: main
-    name: costtest
+        repository: costdev
+        revision: costdev
+    name: costdevtrig
     type: Webhook

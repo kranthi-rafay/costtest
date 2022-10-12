@@ -1,16 +1,16 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Blueprint
 metadata:
-  name: maxunavailable-testing
+  name: bpr2
   project: defaultproject
 spec:
   base:
     name: default
-    version: 1.17.0
+    version: 1.19.3
   costProfileRef:
     enabled: true
-    name: default-cost-profile-aws
-    version: version-1658308210
+    name: cprole2
+    version: v1
   defaultAddons:
     csiSecretStoreConfig:
       providers: {}
@@ -20,6 +20,7 @@ spec:
     enableVM: false
   drift:
     enabled: false
+  meshRef: {}
   networkPolicy: {}
   opaPolicy: {}
   placement: {}

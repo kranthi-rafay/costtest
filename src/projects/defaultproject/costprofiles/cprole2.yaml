@@ -1,0 +1,28 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: cprole2
+  project: defaultproject
+spec:
+  installationParams:
+    aws:
+      awsCredentials:
+        cloudCredentialsID: 3
+      curIntegration:
+        athenaBucketName: reserved-pricing
+        athenaDatabase: rafay
+        athenaRegion: us-west-1
+        athenaTable: costmgmt
+        awsAccountId: awsAccIdc
+        masterPayerArn: hub1
+      spotIntegration:
+        awsAccountId: awsAccIds
+        awsSpotDataBucket: spot-pricing
+        awsSpotDataPrefix: costmgmt
+        awsSpotDataRegion: us-west-1
+        spotLabel: ctype
+        spotLabelValue: cspot
+  providerType: AWS
+  sharing:
+    enabled: false
+  version: v1

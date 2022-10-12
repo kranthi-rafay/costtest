@@ -1,20 +1,22 @@
 apiVersion: cost.k8smgmt.io/v3
 kind: CostProfile
 metadata:
-  name: ctcp1
+  name: cprole1
   project: defaultproject
 spec:
   installationParams:
     aws:
       awsCredentials:
-        awsAccountId: awsAccId
-        awsServiceKeyName: DFGF
+        cloudCredentialsID: 2
       curIntegration:
         athenaBucketName: reserved-pricing
         athenaDatabase: rafay
         athenaRegion: us-west-1
         athenaTable: costmgmt
+        awsAccountId: awsAccIdc
+        masterPayerArn: hub1
       spotIntegration:
+        awsAccountId: awsAccIds
         awsSpotDataBucket: spot-pricing
         awsSpotDataPrefix: costmgmt
         awsSpotDataRegion: us-west-1

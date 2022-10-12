@@ -1,15 +1,19 @@
 apiVersion: cost.k8smgmt.io/v3
 kind: CostProfile
 metadata:
-  name: sample
+  name: t1
   project: defaultproject
 spec:
   installationParams:
     aws:
       awsCredentials: {}
-      curIntegration: {}
-      spotIntegration: {}
+      curIntegration:
+        athenaBucketName: c
+        athenaRegion: c
+      spotIntegration:
+        spotLabel: a
+        spotLabelValue: v
   providerType: aws
   sharing:
     enabled: false
-  version: v5
+  version: v1

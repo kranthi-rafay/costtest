@@ -1,17 +1,17 @@
 apiVersion: cost.k8smgmt.io/v3
 kind: CostProfile
 metadata:
-  name: testprctl14
+  name: p1
   project: defaultproject
 spec:
   installationParams:
     aws:
-      awsCredentials:
-        awsServiceKeyName: sdf
-      curIntegration: {}
+      awsCredentials: {}
+      curIntegration:
+        athenaRegion: q
       spotIntegration:
-        spotLabel: sa
-  providerType: AWS
+        spotLabel: qq
+  providerType: aws
   sharing:
     enabled: false
-  version: v16
+  version: v1

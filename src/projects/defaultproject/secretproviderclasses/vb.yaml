@@ -1,7 +1,0 @@
-apiVersion: integrations.k8smgmt.io/v3
-kind: SecretProviderClass
-metadata:
-  name: vb
-  project: defaultproject
-spec:
-  provider: AWS
