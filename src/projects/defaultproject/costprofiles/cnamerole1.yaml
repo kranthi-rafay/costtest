@@ -1,26 +1,27 @@
 apiVersion: cost.k8smgmt.io/v3
 kind: CostProfile
 metadata:
-  name: gittosys1
+  name: cnamerole1
   project: defaultproject
 spec:
   installationParams:
     aws:
-      awsCredentials: {}
+      awsCredentials:
+        cloudCredentialsName: kranthirole
       curIntegration:
         athenaBucketName: reserved-pricing
         athenaDatabase: rafay
-        athenaRegion: us-west-1
+        athenaRegion: us-west-2
         athenaTable: costmgmt
-        awsAccountId: awsAccId
-        masterPayerArn: coming from git
+        awsAccountId: awsAccIdc1
+        masterPayerArn: hub1
       spotIntegration:
-        awsAccountId: awsAccIds
+        awsAccountId: awsAccIds1
         awsSpotDataBucket: spot-pricing
         awsSpotDataPrefix: costmgmt
-        awsSpotDataRegion: us-west-1
-        spotLabel: ctype3
-        spotLabelValue: cspot
+        awsSpotDataRegion: us-west-2
+        spotLabel: ctypemk
+        spotLabelValue: cspotr
   providerType: AWS
   sharing:
     enabled: false

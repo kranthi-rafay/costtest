@@ -1,26 +1,30 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Blueprint
 metadata:
-  name: bprctl2
+  name: ccn2
   project: defaultproject
 spec:
   base:
     name: default
-    version: 1.17.0
-  costProfileRef: {}
+    version: 1.19.3
+  costProfileRef:
+    enabled: true
+    name: cloudname1
+    version: v1
   defaultAddons:
     csiSecretStoreConfig:
       providers: {}
-    enableIngress: false
+    enableIngress: true
     enableLogging: false
-    enableMonitoring: false
+    enableMonitoring: true
     enableVM: false
   drift:
     enabled: false
+  meshRef: {}
   networkPolicy: {}
   opaPolicy: {}
   placement: {}
   sharing:
     enabled: false
   type: custom
-  version: v5
+  version: v1

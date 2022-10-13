@@ -1,0 +1,23 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: ccnr1
+  project: defaultproject
+spec:
+  costProfileRef: {}
+  defaultAddons:
+    csiSecretStoreConfig:
+      providers: {}
+    enableIngress: false
+    enableLogging: false
+    enableMonitoring: false
+    enableVM: false
+  drift:
+    enabled: false
+  meshRef: {}
+  networkPolicy: {}
+  opaPolicy: {}
+  placement: {}
+  sharing:
+    enabled: false
+  type: custom
