@@ -4,13 +4,19 @@ metadata:
   name: ccaz1
   project: defaultproject
 spec:
-  costProfileRef: {}
+  base:
+    name: default
+    version: 1.19.3
+  costProfileRef:
+    enabled: true
+    name: cnaz1
+    version: v1
   defaultAddons:
     csiSecretStoreConfig:
       providers: {}
-    enableIngress: false
+    enableIngress: true
     enableLogging: false
-    enableMonitoring: false
+    enableMonitoring: true
     enableVM: false
   drift:
     enabled: false
@@ -21,3 +27,4 @@ spec:
   sharing:
     enabled: false
   type: custom
+  version: v1
