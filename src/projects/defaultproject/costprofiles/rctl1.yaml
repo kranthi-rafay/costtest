@@ -1,0 +1,27 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: rctl1
+  project: defaultproject
+spec:
+  installationParams:
+    aws:
+      awsCredentials:
+        cloudCredentialsName: kranthicc
+      curIntegration:
+        athenaBucketName: s3://aws-athena-query-results-madhu
+        athenaDatabase: athenacurcfn_madhu
+        athenaRegion: us-west-2
+        athenaTable: madhu
+        awsAccountId: mkr
+      spotIntegration:
+        awsAccountId: mkr
+        awsSpotDataBucket: madhu
+        awsSpotDataPrefix: madhuspot
+        awsSpotDataRegion: us-west-2
+        spotLabel: test
+        spotLabelValue: value
+  providerType: AWS
+  sharing:
+    enabled: false
+  version: v1
