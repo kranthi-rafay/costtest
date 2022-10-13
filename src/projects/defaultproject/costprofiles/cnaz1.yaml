@@ -1,0 +1,20 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: cnaz1
+  project: defaultproject
+spec:
+  installationParams:
+    azure:
+      customPricing:
+        cloudCredentialsName: kranthiaz
+        spotInstance:
+          spotLabel: type
+          spotLabelValue: spot
+      gpuEstimates:
+        gpuLabel: accelerator
+        gpuLabelValue: nvidia
+  providerType: AZURE
+  sharing:
+    enabled: false
+  version: v1
