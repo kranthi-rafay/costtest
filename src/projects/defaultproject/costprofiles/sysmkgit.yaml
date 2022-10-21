@@ -1,0 +1,27 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: sysmkgit
+  project: defaultproject
+spec:
+  installationParams:
+    aws:
+      awsCredentials:
+        cloudCredentialsName: cptest
+      curIntegration:
+        athenaBucketName: 2q
+        athenaDatabase: 2q
+        athenaRegion: 2q
+        athenaTable: 2q
+        awsAccountId: 2q
+        masterPayerArn: 2q
+      spotIntegration:
+        awsAccountId: 1q
+        awsSpotDataBucket: 1q
+        awsSpotDataPrefix: 1q
+        awsSpotDataRegion: 1q
+        spotLabel: 1q
+        spotLabelValue: 1q
+  providerType: aws
+  sharing: {}
+  version: v1
