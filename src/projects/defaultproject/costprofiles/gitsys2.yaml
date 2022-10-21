@@ -1,0 +1,27 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: gitsys2
+  project: defaultproject
+spec:
+  installationParams:
+    aws:
+      awsCredentials:
+        cloudCredentialsName: cptest
+      curIntegration:
+        athenaBucketName: wq1
+        athenaDatabase: wq1
+        athenaRegion: wq1
+        athenaTable: wq1
+        awsAccountId: wq
+        masterPayerArn: 1wq
+      spotIntegration:
+        awsAccountId: we2
+        awsSpotDataBucket: 2we
+        awsSpotDataPrefix: w2e
+        awsSpotDataRegion: w2e
+        spotLabel: qw3
+        spotLabelValue: 2we
+  providerType: aws
+  sharing: {}
+  version: v1
