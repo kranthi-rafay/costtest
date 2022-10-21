@@ -1,0 +1,26 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: gitaws1
+  description: "rctl Cost Profile description"
+  project: defaultproject
+spec:
+  version: v1
+  installationParams:
+    aws:
+      spotIntegration:
+        spotLabel: tested
+        spotLabelValue: value
+        awsSpotDataRegion: us-west-2
+        awsSpotDataBucket: madhu
+        awsSpotDataPrefix: madhuspot
+        awsAccountId: "mkr"
+      curIntegration:
+        athenaRegion: us-west-2
+        athenaBucketName: s3://aws-athena-query-results-madhu
+        athenaDatabase: athenacurcfn_madhu
+        athenaTable: madhu
+        awsAccountId: "mkr"
+      awsCredentials:
+        cloudCredentialsName: cptest
+  providerType: aws
