@@ -5,12 +5,11 @@ metadata:
   project: defaultproject
 spec:
   agents:
-  - name: costtest
+  - name: cptest
   credentials:
     password: sealed://credentials.password
     username: kranthi-rafay
   endpoint: https://github.com/kranthi-rafay/costtest.git
-  options: {}
   secret:
     name: file://artifacts/costdev/sealed-secret.yaml
   type: Git

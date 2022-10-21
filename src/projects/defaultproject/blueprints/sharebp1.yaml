@@ -1,0 +1,22 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: sharebp1
+  project: defaultproject
+spec:
+  base:
+    name: default
+    version: 1.19.6
+  costProfileRef:
+    enabled: true
+    name: shbp1
+    version: v1
+  defaultAddons:
+    enableIngress: true
+    enableMonitoring: true
+  sharing:
+    enabled: true
+    projects:
+    - name: opencost
+  type: custom
+  version: v1

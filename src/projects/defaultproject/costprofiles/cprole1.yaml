@@ -5,24 +5,7 @@ metadata:
   project: defaultproject
 spec:
   installationParams:
-    aws:
-      awsCredentials:
-        cloudCredentialsID: 2
-      curIntegration:
-        athenaBucketName: reserved-pricing
-        athenaDatabase: rafay
-        athenaRegion: us-west-1
-        athenaTable: costmgmt
-        awsAccountId: awsAccIdc
-        masterPayerArn: hub1
-      spotIntegration:
-        awsAccountId: awsAccIds
-        awsSpotDataBucket: spot-pricing
-        awsSpotDataPrefix: costmgmt
-        awsSpotDataRegion: us-west-1
-        spotLabel: ctype3
-        spotLabelValue: cspot
+    aws: {}
   providerType: AWS
-  sharing:
-    enabled: false
-  version: v1
+  sharing: {}
+  version: v3

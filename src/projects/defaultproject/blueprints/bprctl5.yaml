@@ -1,0 +1,19 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: bprctl5
+  project: defaultproject
+spec:
+  base:
+    name: default
+    version: 1.18.0
+  costProfileRef:
+    enabled: true
+    name: cprole2
+    version: v1
+  defaultAddons:
+    csiSecretStoreConfig:
+      providers: {}
+    enableMonitoring: true
+  type: custom
+  version: v5

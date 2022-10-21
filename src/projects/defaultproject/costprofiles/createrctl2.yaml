@@ -1,0 +1,27 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: createrctl2
+  project: defaultproject
+spec:
+  installationParams:
+    aws:
+      awsCredentials:
+        cloudCredentialsName: kranthicc
+      curIntegration:
+        athenaBucketName: s3://aws-athena-query-results-rafay-kubecost-qa
+        athenaDatabase: athenacurcfn_rafay_kubecost_qa
+        athenaRegion: us-west-2
+        athenaTable: rafay_kubecost_qa
+        awsAccountId: "799025805923"
+        masterPayerArn: arn:aws:iam::799025805923:role/KubecostRoleQA-679196758854
+      spotIntegration:
+        awsAccountId: "679196758854"
+        awsSpotDataBucket: kube-cost-qa
+        awsSpotDataPrefix: spot
+        awsSpotDataRegion: us-west-2
+        spotLabel: spot
+        spotLabelValue: "true"
+  providerType: aws
+  sharing: {}
+  version: v2

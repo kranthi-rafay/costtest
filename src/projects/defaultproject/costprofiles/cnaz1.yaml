@@ -15,6 +15,5 @@ spec:
         gpuLabel: accelerator
         gpuLabelValue: nvidia
   providerType: AZURE
-  sharing:
-    enabled: false
+  sharing: {}
   version: v1

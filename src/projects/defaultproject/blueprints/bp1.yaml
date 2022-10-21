@@ -1,0 +1,19 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: bp1
+  project: defaultproject
+spec:
+  base:
+    name: default
+    version: 1.19.6
+  costProfileRef: {}
+  defaultAddons:
+    enableIngress: true
+    enableMonitoring: true
+  sharing:
+    enabled: true
+    projects:
+    - name: madhuproject
+  type: custom
+  version: v1

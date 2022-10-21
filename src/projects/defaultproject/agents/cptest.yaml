@@ -1,0 +1,11 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: cptest
+  project: defaultproject
+spec:
+  active: true
+  cluster:
+    name: cp
+  type: Cluster
+  version: r1.18.0

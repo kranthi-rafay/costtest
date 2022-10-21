@@ -1,0 +1,27 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: opcp
+  project: defaultproject
+spec:
+  installationParams:
+    aws:
+      awsCredentials:
+        cloudCredentialsName: kranthicc
+      curIntegration:
+        athenaBucketName: sd
+        athenaDatabase: sdf
+        athenaRegion: sd
+        athenaTable: sdgg
+        awsAccountId: err
+        masterPayerArn: gr
+      spotIntegration:
+        awsAccountId: sdf
+        awsSpotDataBucket: sdf
+        awsSpotDataPrefix: sdf
+        awsSpotDataRegion: sd
+        spotLabel: d
+        spotLabelValue: sd
+  providerType: aws
+  sharing: {}
+  version: v1

@@ -1,0 +1,8 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: simple-blueprint
+  project: defaultproject
+spec:
+  costProfileRef: {}
+  type: custom

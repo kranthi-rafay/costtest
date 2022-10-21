@@ -1,7 +1,7 @@
 apiVersion: cost.k8smgmt.io/v3
 kind: CostProfile
 metadata:
-  name: systogit1
+  name: st3
   project: defaultproject
 spec:
   installationParams:
@@ -11,5 +11,7 @@ spec:
       spotIntegration: {}
   providerType: aws
   sharing:
-    enabled: false
+    enabled: true
+    projects:
+    - name: '*'
   version: v1
