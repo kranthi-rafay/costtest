@@ -8,6 +8,7 @@ spec:
     aws:
       awsCredentials:
         cloudCredentialsName: kranthicc
+        cloudCredentialsId: 2
       curIntegration:
         athenaBucketName: v4testED
         athenaDatabase: MKedit
@@ -24,4 +25,4 @@ spec:
         spotLabelValue: sd
   providerType: aws
   sharing: {}
-  version: v1
+  version: v2
