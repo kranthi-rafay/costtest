@@ -12,19 +12,7 @@ spec:
     name: cnaz1
     version: v1
   defaultAddons:
-    csiSecretStoreConfig:
-      providers: {}
     enableIngress: true
-    enableLogging: false
     enableMonitoring: true
-    enableVM: false
-  drift:
-    enabled: false
-  meshRef: {}
-  networkPolicy: {}
-  opaPolicy: {}
-  placement: {}
-  sharing:
-    enabled: false
   type: custom
   version: v1

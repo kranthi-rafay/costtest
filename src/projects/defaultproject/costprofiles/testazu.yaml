@@ -7,11 +7,9 @@ spec:
   installationParams:
     azure:
       customPricing:
-        cloudCredentialsID: 1
         spotInstance:
           spotLabel: das
       gpuEstimates: {}
   providerType: azure
-  sharing:
-    enabled: false
+  sharing: {}
   version: dsa

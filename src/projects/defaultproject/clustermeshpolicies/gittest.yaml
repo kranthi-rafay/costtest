@@ -7,6 +7,4 @@ spec:
   rules:
   - name: enable-strict-mtls
     version: version-1665658202
-  sharing:
-    enabled: false
   version: v1

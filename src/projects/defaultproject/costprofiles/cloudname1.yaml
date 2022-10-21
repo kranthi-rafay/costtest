@@ -23,6 +23,5 @@ spec:
         spotLabel: ctypemk
         spotLabelValue: cspotr
   providerType: AWS
-  sharing:
-    enabled: false
+  sharing: {}
   version: v1

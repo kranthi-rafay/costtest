@@ -4,7 +4,5 @@ metadata:
   name: cost
   project: defaultproject
 spec:
-  sharing:
-    enabled: false
   type: KubeSeal
   version: v-1

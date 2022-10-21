@@ -5,8 +5,6 @@ metadata:
   project: defaultproject
 spec:
   active: true
-  sharing:
-    enabled: false
   stages:
   - config:
       destinationRepo: {}

@@ -6,8 +6,7 @@ metadata:
 spec:
   installationParams:
     aws:
-      awsCredentials:
-        cloudCredentialsName: kranthicc
+      awsCredentials: {}
       curIntegration:
         athenaBucketName: v4testED
         athenaDatabase: MKedit

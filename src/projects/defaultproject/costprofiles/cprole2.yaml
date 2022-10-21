@@ -6,8 +6,7 @@ metadata:
 spec:
   installationParams:
     aws:
-      awsCredentials:
-        cloudCredentialsID: 3
+      awsCredentials: {}
       curIntegration:
         athenaBucketName: reserved-pricing
         athenaDatabase: rafay
@@ -23,6 +22,5 @@ spec:
         spotLabel: ctype
         spotLabelValue: cspot
   providerType: AWS
-  sharing:
-    enabled: false
+  sharing: {}
   version: v1
