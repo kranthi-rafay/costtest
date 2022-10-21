@@ -1,0 +1,19 @@
+apiVersion: cost.k8smgmt.io/v3
+kind: CostProfile
+metadata:
+  name: gitaz1
+  project: defaultproject
+spec:
+  installationParams:
+    azure:
+      customPricing:
+        cloudCredentialsName: cptest
+        spotInstance:
+          spotLabel: type
+          spotLabelValue: spot
+      gpuEstimates:
+        gpuLabel: accelerator
+        gpuLabelValue: nvidia
+  providerType: azure
+  sharing: {}
+  version: v1
